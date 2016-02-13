@@ -1,6 +1,6 @@
 <?php
 
-mysql_connect('localhost','root','');
+mysql_connect('br-cdbr-azure-south-a.cloudapp.net','bd8889dfe8683e','c01f79fa');
 
 mysql_select_db('belajar');
 
