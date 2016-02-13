@@ -9,6 +9,7 @@ $sql=mysql_query("SELECT * FROM user");
 while($row= mysql_fetch_array($sql)){
 	echo $row['username']."</br>";
 }
+echo 'basing';
 
 if (isset($_POST['Username'], $_POST['Password'])){
 	mysql_query("INSERT INTO user VALUES ('".$_POST['Username']."','".$_POST['Username']."')");
