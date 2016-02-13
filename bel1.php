@@ -2,7 +2,7 @@
 
 mysql_connect('br-cdbr-azure-south-a.cloudapp.net','bd8889dfe8683e','c01f79fa') or die(mysql_error());
 
-mysql_select_db('study') or die(mysql_error());
+mysql_select_db('acsm_a3ae6514dd1df7c') or die(mysql_error());
 
 $sql=mysql_query("SELECT * FROM user") or die(mysql_error());
 
