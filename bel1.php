@@ -2,14 +2,14 @@
 
 mysql_connect('br-cdbr-azure-south-a.cloudapp.net','bd8889dfe8683e','c01f79fa');
 
-mysql_select_db('belajar');
+mysql_select_db('study');
 
 $sql=mysql_query("SELECT * FROM user");
-/*
+
 while($row= mysql_fetch_array($sql)){
-	echo $row['Username']."</br>";
+	echo $row['username']."</br>";
 }
-*/
+
 if (isset($_POST['Username'], $_POST['Password'])){
 	mysql_query("INSERT INTO user VALUES ('".$_POST['Username']."','".$_POST['Username']."')");
 }
