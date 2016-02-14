@@ -26,7 +26,7 @@ if (isset($_POST['username'], $_POST['password'])){
 			<td><input type="password" name="password"/></td>
 		</tr>
 		<tr>
-			<td><input type="submit" value="Submit"/></td>
+			<td><input type="submit" value="login"/></td>
 		</tr>
 		<tr>
 			<td><a href="index.php">Login</a></td>
