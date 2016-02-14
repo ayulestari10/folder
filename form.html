@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+	<head>
+		<title>Web</title>
+	</head>
+	
+	<body>
+	<form>
+		<table align="left" id="bk">
+			<h2>BIODATA</h2>
+			<th></th>
+			<tr>
+				<td>Nama</td>
+				<td>:</td>
+				<td><input type="text" name="nama" maxlength="30" size="30"/></td>
+			</tr>
+			<tr>
+				<td>Tempat,tanggal lahir</td>
+				<td>:</td>
+				<td><input type="text" name="url" maxlength="50" size="30"/></td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td>:</td>
+				<td><textarea name="pesan" cols="30" rows="5"></textarea></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>:</td>
+				<td><input type="text" name="email" maxlength="30" size="30"/> <strong>tidak dipublikasikan</strong></td>
+			</tr>
+			<tr>
+				<td>Tanggal Pesan</td>
+				<td>:</td>
+				<td>Tanggal <?php echo "<select name='tanggal'>";
+				for($a=1;$a<=31;$a++)
+				{
+					echo "<option value'".$a."'>".$a."</option>";
+				}
+					echo "</select>";
+				?>
+					Bulan <?php echo "<select name='bulan'>";
+				for($b=1;$b<=12;$b++)
+				{
+					echo "<option value'".$b."'>".$b."</option>";
+				}
+					echo "</select>";
+				?>
+					Tahun <?php echo "<select name='tahun'>";
+					$thn=2020;
+				for($c=1990;$c<=$thn;$c++)
+				{
+					echo "<option value'".$c."'>".$c."</option>";
+				}
+					echo "</select>";
+				?>	</td>
+			</tr>
+			<tr><td><input type="submit" name="submit" value="Isi Buku Tamu"/></td></tr>
+		</table>
+		</form>
+	</body>
+</html>
